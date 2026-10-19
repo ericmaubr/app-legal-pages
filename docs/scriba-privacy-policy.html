@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacy Policy / Política de Privacidade</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #e8ecf3;
+      --muted: #aab3c2;
+      --accent: #7aa2ff;
+      --border: #2a3140;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.2rem; margin-top: 24px; }
+    p, li { color: var(--text); }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    .lang-switch {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      background: #1d2330;
+      color: var(--text);
+      border: 1px solid var(--border);
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .btn.active {
+      border-color: var(--accent);
+      color: #fff;
+    }
+    .section {
+      display: none;
+    }
+    .section.active {
+      display: block;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    code {
+      background: #11151d;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #d6e2ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="lang-switch">
+        <button class="btn active" id="btn-pt" onclick="showLang('pt')">Português</button>
+        <button class="btn" id="btn-en" onclick="showLang('en')">English</button>
+      </div>
+
+      <!-- PT-BR -->
+      <section id="pt" class="section active">
+        <h1>Política de Privacidade</h1>
+        <p class="muted">
+          <strong>App:</strong> Scriba<br />
+          <strong>Última atualização:</strong> 19/10/2026
+        </p>
+
+        <p>
+          Esta Política de Privacidade descreve como o aplicativo <strong>Scriba</strong> trata as informações dos usuários.
+          O Scriba é um aplicativo de ditado por voz que funciona inteiramente no seu aparelho.
+          Ao utilizar o app, você concorda com os termos desta política.
+        </p>
+
+        <h2>1. Informações coletadas</h2>
+        <p>
+          O app <strong>não coleta dados pessoais</strong>. Ele não exige cadastro ou login, não possui anúncios,
+          não usa ferramentas de análise ou telemetria e <strong>não solicita permissão de acesso à internet</strong>.
+          O desenvolvedor não recebe nenhuma informação sobre você ou sobre o que você dita.
+        </p>
+
+        <h2>2. Áudio e texto ditado</h2>
+        <ul>
+          <li>O reconhecimento de voz é feito localmente, por um modelo de voz armazenado no próprio aparelho.</li>
+          <li>O áudio é processado em memória, apenas enquanto você dita, e não é enviado a nenhum servidor nem salvo em arquivo na versão publicada do app.</li>
+          <li>O texto ditado é inserido no campo de texto que você escolheu. O app não o envia a terceiros.</li>
+          <li>O microfone só é aberto durante um ditado iniciado por você e pode ser desligado a qualquer momento (botão “Parar captura” no app).</li>
+        </ul>
+
+        <h2>3. Leitura do texto em voz alta</h2>
+        <p>
+          Para você conferir o que foi escrito, o app lê o texto em voz alta usando o motor de texto para fala (TTS)
+          instalado no aparelho. Dependendo do motor escolhido nas configurações do Android, algumas vozes podem
+          funcionar online. Esse tratamento é de responsabilidade do fornecedor do motor (por exemplo, o Google) e
+          segue a política dele; o Scriba não controla nem recebe esses dados.
+        </p>
+
+        <h2>4. Serviço de acessibilidade</h2>
+        <p>O Scriba usa o serviço de acessibilidade do Android somente para:</p>
+        <ul>
+          <li>inserir o texto ditado no campo de texto em foco;</li>
+          <li>ler o texto imediatamente antes do cursor, para confirmar que a inserção funcionou e poder desfazê-la;</li>
+          <li>identificar qual app está em foco, para nunca escrever em um app diferente do que você estava usando;</li>
+          <li>acionar o botão de enviar do app do Claude, e apenas depois de você dizer a palavra de confirmação;</li>
+          <li>exibir o ícone flutuante do microfone e os avisos sobre outros apps.</li>
+        </ul>
+        <p>
+          O app ignora campos protegidos (como senhas). O conteúdo de outras telas não é armazenado nem transmitido.
+        </p>
+
+        <h2>5. Permissões do app</h2>
+        <ul>
+          <li><strong>Microfone</strong> — para ouvir o ditado e as respostas faladas (“confirma”, “refazer”, “cancelar”).</li>
+          <li><strong>Serviço em primeiro plano (microfone)</strong> — mantém uma notificação visível enquanto o microfone está aberto.</li>
+          <li><strong>Notificações</strong> — para exibir essa notificação.</li>
+          <li><strong>Acessibilidade</strong> — conforme descrito acima; só funciona se você a ativar nas configurações do Android.</li>
+        </ul>
+        <p>
+          Se não for possível inserir o texto no campo, o app o copia para a área de transferência, para que o que
+          você ditou não se perca.
+        </p>
+
+        <h2>6. Armazenamento e segurança</h2>
+        <p>
+          As configurações (frase de parada, palavras de envio, dicionário pessoal e preferências do ícone) ficam
+          guardadas apenas no aparelho e não entram em backups na nuvem. Desinstalar o app apaga esses dados.
+          Os modelos de voz ficam em uma pasta do app no aparelho.
+        </p>
+
+        <h2>7. Compartilhamento de dados</h2>
+        <p>
+          O desenvolvedor não coleta, vende nem compartilha dados pessoais.
+        </p>
+
+        <h2>8. Crianças</h2>
+        <p>O app não é direcionado especificamente a crianças.</p>
+
+        <h2>9. Seus direitos</h2>
+        <p>
+          Como o app não coleta dados pessoais, não há dados seus com o desenvolvedor para acessar, corrigir ou excluir
+          (LGPD/GDPR). Para apagar o que o app guarda no aparelho, limpe os dados do app ou desinstale-o.
+        </p>
+
+        <h2>10. Alterações desta política</h2>
+        <p>
+          Esta política pode ser atualizada. Se uma versão futura do app passar a usar internet, anúncios ou serviços
+          de terceiros, esta página será atualizada antes da publicação dessa versão. A versão mais recente estará
+          sempre nesta página.
+        </p>
+
+        <h2>11. Contato</h2>
+        <p>
+          Em caso de dúvidas sobre privacidade, entre em contato: <strong>emsoftwarestudio@gmail.com</strong>
+        </p>
+      </section>
+
+      <!-- EN -->
+      <section id="en" class="section">
+        <h1>Privacy Policy</h1>
+        <p class="muted">
+          <strong>App:</strong> Scriba<br />
+          <strong>Last updated:</strong> 10/19/2026
+        </p>
+
+        <p>
+          This Privacy Policy explains how the <strong>Scriba</strong> app handles user information.
+          Scriba is a voice dictation app that works entirely on your device.
+          By using the app, you agree to this policy.
+        </p>
+
+        <h2>1. Information we collect</h2>
+        <p>
+          The app <strong>does not collect personal data</strong>. It does not require registration or login, has no
+          ads, uses no analytics or telemetry tools, and <strong>does not request internet access permission</strong>.
+          The developer receives no information about you or about what you dictate.
+        </p>
+
+        <h2>2. Audio and dictated text</h2>
+        <ul>
+          <li>Speech recognition runs locally, using a speech model stored on the device itself.</li>
+          <li>Audio is processed in memory, only while you dictate, and is not sent to any server nor saved to a file in the published version of the app.</li>
+          <li>The dictated text is inserted into the text field you chose. The app does not send it to third parties.</li>
+          <li>The microphone is opened only during a dictation you started and can be turned off at any time (the “Stop capture” button in the app).</li>
+        </ul>
+
+        <h2>3. Reading the text aloud</h2>
+        <p>
+          So you can check what was written, the app reads the text aloud using the text-to-speech (TTS) engine
+          installed on the device. Depending on the engine selected in Android settings, some voices may work online.
+          That processing is the responsibility of the engine provider (for example, Google) and follows its policy;
+          Scriba neither controls nor receives that data.
+        </p>
+
+        <h2>4. Accessibility service</h2>
+        <p>Scriba uses the Android accessibility service only to:</p>
+        <ul>
+          <li>insert the dictated text into the focused text field;</li>
+          <li>read the text immediately before the cursor, to confirm the insertion worked and to be able to undo it;</li>
+          <li>identify which app is in focus, so it never writes into an app other than the one you were using;</li>
+          <li>press the send button of the Claude app, and only after you speak the confirmation word;</li>
+          <li>show the floating microphone icon and notices over other apps.</li>
+        </ul>
+        <p>
+          The app ignores protected fields (such as passwords). The content of other screens is neither stored nor transmitted.
+        </p>
+
+        <h2>5. App permissions</h2>
+        <ul>
+          <li><strong>Microphone</strong> — to hear the dictation and the spoken answers (“confirm”, “redo”, “cancel”).</li>
+          <li><strong>Foreground service (microphone)</strong> — keeps a visible notification while the microphone is open.</li>
+          <li><strong>Notifications</strong> — to show that notification.</li>
+          <li><strong>Accessibility</strong> — as described above; it only works if you turn it on in Android settings.</li>
+        </ul>
+        <p>
+          If the text cannot be inserted into the field, the app copies it to the clipboard so that what you
+          dictated is not lost.
+        </p>
+
+        <h2>6. Storage and security</h2>
+        <p>
+          Settings (stop phrase, send words, personal dictionary, and icon preferences) are kept only on the device
+          and are not included in cloud backups. Uninstalling the app deletes this data.
+          Speech models are kept in an app folder on the device.
+        </p>
+
+        <h2>7. Data sharing</h2>
+        <p>
+          The developer does not collect, sell, or share personal data.
+        </p>
+
+        <h2>8. Children</h2>
+        <p>The app is not specifically directed to children.</p>
+
+        <h2>9. Your rights</h2>
+        <p>
+          Because the app does not collect personal data, the developer holds no data about you to access, correct, or
+          delete (GDPR/LGPD). To erase what the app stores on your device, clear the app's data or uninstall it.
+        </p>
+
+        <h2>10. Changes to this policy</h2>
+        <p>
+          We may update this policy. If a future version of the app starts using the internet, ads, or third-party
+          services, this page will be updated before that version is published. The latest version will always be
+          available on this page.
+        </p>
+
+        <h2>11. Contact</h2>
+        <p>
+          For privacy-related questions, contact: <strong>emsoftwarestudio@gmail.com</strong>
+        </p>
+      </section>
+
+      <footer>
+        This template is provided for convenience and does not constitute legal advice.
+      </footer>
+    </div>
+  </div>
+
+  <script>
+    function showLang(lang) {
+      var pt = document.getElementById("pt");
+      var en = document.getElementById("en");
+      var btnPt = document.getElementById("btn-pt");
+      var btnEn = document.getElementById("btn-en");
+
+      if (lang === "pt") {
+        pt.classList.add("active");
+        en.classList.remove("active");
+        btnPt.classList.add("active");
+        btnEn.classList.remove("active");
+        document.documentElement.lang = "pt-BR";
+      } else {
+        en.classList.add("active");
+        pt.classList.remove("active");
+        btnEn.classList.add("active");
+        btnPt.classList.remove("active");
+        document.documentElement.lang = "en";
+      }
+    }
+  </script>
+</body>
+</html>
