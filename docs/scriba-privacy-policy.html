@@ -101,14 +101,25 @@
 
         <h2>1. Informações coletadas</h2>
         <p>
-          O app <strong>não coleta dados pessoais</strong>. Ele não exige cadastro ou login, não possui anúncios,
-          não usa ferramentas de análise ou telemetria e <strong>não solicita permissão de acesso à internet</strong>.
-          O desenvolvedor não recebe nenhuma informação sobre você ou sobre o que você dita.
+          O app <strong>não coleta dados pessoais</strong>. Ele não exige cadastro ou login, não possui anúncios e
+          não usa ferramentas de análise ou telemetria. O desenvolvedor não recebe nenhuma informação sobre você ou
+          sobre o que você dita.
+        </p>
+        <p>
+          A <strong>internet é usada apenas para baixar os modelos de voz</strong> na primeira abertura do app
+          (veja a seção 2). Nenhum áudio e nenhum texto ditado é enviado pela internet.
         </p>
 
         <h2>2. Áudio e texto ditado</h2>
         <ul>
           <li>O reconhecimento de voz é feito localmente, por um modelo de voz armazenado no próprio aparelho.</li>
+          <li>
+            Os modelos de voz (arquivos de cerca de 250 MB no total) são baixados <strong>uma única vez</strong>, na primeira
+            abertura do app, do serviço Hugging Face (huggingface.co). Ao baixar, esse serviço vê o endereço IP do seu
+            aparelho e o pedido do arquivo, como em qualquer download, e segue a política de privacidade dele; o Scriba
+            não envia a ele nenhuma outra informação. O app confere a integridade de cada arquivo (SHA-256) antes de
+            usá-lo e só baixa pelos dados móveis se você permitir.
+          </li>
           <li>O áudio é processado em memória, apenas enquanto você dita, e não é enviado a nenhum servidor nem salvo em arquivo na versão publicada do app.</li>
           <li>O texto ditado é inserido no campo de texto que você escolheu. O app não o envia a terceiros.</li>
           <li>O microfone só é aberto durante um ditado iniciado por você e pode ser desligado a qualquer momento (botão “Parar captura” no app).</li>
@@ -140,6 +151,7 @@
           <li><strong>Microfone</strong> — para ouvir o ditado e as respostas faladas (“confirma”, “refazer”, “cancelar”).</li>
           <li><strong>Serviço em primeiro plano (microfone)</strong> — mantém uma notificação visível enquanto o microfone está aberto.</li>
           <li><strong>Notificações</strong> — para exibir essa notificação.</li>
+          <li><strong>Internet e estado da rede</strong> — somente para baixar os modelos de voz e saber se você está no Wi-Fi ou nos dados móveis.</li>
           <li><strong>Acessibilidade</strong> — conforme descrito acima; só funciona se você a ativar nas configurações do Android.</li>
         </ul>
         <p>
@@ -151,7 +163,7 @@
         <p>
           As configurações (frase de parada, palavras de envio, dicionário pessoal e preferências do ícone) ficam
           guardadas apenas no aparelho e não entram em backups na nuvem. Desinstalar o app apaga esses dados.
-          Os modelos de voz ficam em uma pasta do app no aparelho.
+          Os modelos de voz ficam em uma pasta do app no aparelho, onde foram baixados.
         </p>
 
         <h2>7. Compartilhamento de dados</h2>
@@ -170,8 +182,8 @@
 
         <h2>10. Alterações desta política</h2>
         <p>
-          Esta política pode ser atualizada. Se uma versão futura do app passar a usar internet, anúncios ou serviços
-          de terceiros, esta página será atualizada antes da publicação dessa versão. A versão mais recente estará
+          Esta política pode ser atualizada. Se uma versão futura do app passar a usar a internet para outros fins,
+          exibir anúncios ou usar serviços de terceiros, esta página será atualizada antes da publicação dessa versão. A versão mais recente estará
           sempre nesta página.
         </p>
 
@@ -198,13 +210,24 @@
         <h2>1. Information we collect</h2>
         <p>
           The app <strong>does not collect personal data</strong>. It does not require registration or login, has no
-          ads, uses no analytics or telemetry tools, and <strong>does not request internet access permission</strong>.
-          The developer receives no information about you or about what you dictate.
+          ads, and uses no analytics or telemetry tools. The developer receives no information about you or about what
+          you dictate.
+        </p>
+        <p>
+          The <strong>internet is used only to download the speech models</strong> the first time you open the app
+          (see section 2). No audio and no dictated text is ever sent over the internet.
         </p>
 
         <h2>2. Audio and dictated text</h2>
         <ul>
           <li>Speech recognition runs locally, using a speech model stored on the device itself.</li>
+          <li>
+            The speech models (files of about 250 MB in total) are downloaded <strong>once</strong>, the first time you open
+            the app, from the Hugging Face service (huggingface.co). When downloading, that service sees your device's IP
+            address and the file request, as with any download, and follows its own privacy policy; Scriba sends it no
+            other information. The app checks each file's integrity (SHA-256) before using it and downloads over mobile
+            data only if you allow it.
+          </li>
           <li>Audio is processed in memory, only while you dictate, and is not sent to any server nor saved to a file in the published version of the app.</li>
           <li>The dictated text is inserted into the text field you chose. The app does not send it to third parties.</li>
           <li>The microphone is opened only during a dictation you started and can be turned off at any time (the “Stop capture” button in the app).</li>
@@ -236,6 +259,7 @@
           <li><strong>Microphone</strong> — to hear the dictation and the spoken answers (“confirm”, “redo”, “cancel”).</li>
           <li><strong>Foreground service (microphone)</strong> — keeps a visible notification while the microphone is open.</li>
           <li><strong>Notifications</strong> — to show that notification.</li>
+          <li><strong>Internet and network state</strong> — only to download the speech models and to tell whether you are on Wi-Fi or mobile data.</li>
           <li><strong>Accessibility</strong> — as described above; it only works if you turn it on in Android settings.</li>
         </ul>
         <p>
@@ -247,7 +271,7 @@
         <p>
           Settings (stop phrase, send words, personal dictionary, and icon preferences) are kept only on the device
           and are not included in cloud backups. Uninstalling the app deletes this data.
-          Speech models are kept in an app folder on the device.
+          Speech models are kept in an app folder on the device, where they were downloaded.
         </p>
 
         <h2>7. Data sharing</h2>
@@ -266,8 +290,8 @@
 
         <h2>10. Changes to this policy</h2>
         <p>
-          We may update this policy. If a future version of the app starts using the internet, ads, or third-party
-          services, this page will be updated before that version is published. The latest version will always be
+          We may update this policy. If a future version of the app starts using the internet for other purposes,
+          showing ads, or using third-party services, this page will be updated before that version is published. The latest version will always be
           available on this page.
         </p>
 
