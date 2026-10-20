@@ -120,8 +120,8 @@
             não envia a ele nenhuma outra informação. O app confere a integridade de cada arquivo (SHA-256) antes de
             usá-lo e só baixa pelos dados móveis se você permitir.
           </li>
-          <li>O áudio é processado em memória, apenas enquanto você dita, e não é enviado a nenhum servidor nem salvo em arquivo na versão publicada do app.</li>
-          <li>O texto ditado é inserido no campo de texto que você escolheu. O app não o envia a terceiros.</li>
+          <li>O áudio é processado em memória, apenas enquanto você dita, e nunca é enviado a nenhum servidor. No plano gratuito ele não é salvo; no plano Premium, ele só é guardado, apenas no seu aparelho, se você ligar “Guardar também o áudio” (veja a seção 13).</li>
+          <li>O texto ditado é inserido no campo de texto que você escolheu. O app não o envia a terceiros. No plano Premium, ele também é guardado no histórico, apenas no seu aparelho (seção 13).</li>
           <li>O microfone só é aberto durante um ditado iniciado por você e pode ser desligado a qualquer momento (botão “Parar captura” no app).</li>
         </ul>
 
@@ -158,6 +158,7 @@
           <li><strong>Serviço em primeiro plano (microfone)</strong> — mantém uma notificação visível enquanto o microfone está aberto.</li>
           <li><strong>Notificações</strong> — para exibir essa notificação.</li>
           <li><strong>Internet e estado da rede</strong> — somente para baixar os modelos de voz e saber se você está no Wi-Fi ou nos dados móveis.</li>
+          <li><strong>Compras no app (Google Play Billing)</strong> — para o plano Premium; o pagamento é feito e tratado pelo Google Play.</li>
           <li><strong>Acessibilidade</strong> — conforme descrito acima; só funciona se você a ativar nas configurações do Android.</li>
         </ul>
         <p>
@@ -167,14 +168,14 @@
 
         <h2>6. Armazenamento e segurança</h2>
         <p>
-          As configurações (frase de parada, palavras de envio, dicionário pessoal e preferências do ícone) ficam
+          As configurações (frase de parada, palavras de envio, dicionário pessoal e preferências do ícone e, no plano Premium, o histórico de ditados) ficam
           guardadas apenas no aparelho e não entram em backups na nuvem. Desinstalar o app apaga esses dados.
           Os modelos de voz ficam em uma pasta do app no aparelho, onde foram baixados.
         </p>
 
         <h2>7. Compartilhamento de dados</h2>
         <p>
-          O desenvolvedor não coleta, vende nem compartilha dados pessoais.
+          O desenvolvedor não coleta, vende nem compartilha dados pessoais. O pagamento da assinatura é tratado pelo Google Play, segundo a política dele.
         </p>
 
         <h2>8. Crianças</h2>
@@ -183,7 +184,7 @@
         <h2>9. Seus direitos</h2>
         <p>
           Como o app não coleta dados pessoais, não há dados seus com o desenvolvedor para acessar, corrigir ou excluir
-          (LGPD/GDPR). Para apagar o que o app guarda no aparelho, limpe os dados do app ou desinstale-o.
+          (LGPD/GDPR). Para apagar o que o app guarda no aparelho, use “Apagar tudo” no histórico, limpe os dados do app ou desinstale-o.
         </p>
 
         <h2>10. Alterações desta política</h2>
@@ -205,6 +206,27 @@
           endossado pela OpenAI, pelo Hugging Face nem pelos autores do whisper.cpp. Os avisos de licença completos estão
           no app, em “Sobre o Aplicativo” &gt; “Licenças de código aberto”.
         </p>
+      
+        <h2>13. Plano Premium e histórico</h2>
+        <p>
+          O Scriba tem um <strong>plano gratuito</strong>, que funciona como descrito acima e <strong>não guarda o que você
+          dita</strong>, e um <strong>plano Premium</strong> (assinatura anual) com o histórico de ditados.
+        </p>
+        <ul>
+          <li><strong>Assinatura:</strong> é cobrada, renovada e cancelada pelo Google Play. O desenvolvedor não recebe os
+            seus dados de pagamento; o app só pergunta à Google Play se existe uma assinatura ativa. Você gerencia ou cancela
+            na página de assinaturas da Google Play.</li>
+          <li><strong>Histórico (somente Premium):</strong> guarda o texto de cada ditado (o que foi escrito, o que o app
+            ouviu, a data, o app de destino e o resultado) e, se você ligar “Guardar também o áudio”, o áudio da fala. Tudo
+            fica <strong>apenas no seu aparelho</strong>: não é enviado a nenhum servidor e não entra em backups; desinstalar
+            o app apaga o histórico. O histórico em texto vem ligado por padrão para quem assina e você pode desligá-lo; o
+            áudio vem desligado.</li>
+          <li><strong>Seu controle:</strong> você pode buscar, ler, copiar, enviar a outro app (por exemplo o NexusMD),
+            apagar um ditado ou apagar tudo a qualquer momento. A exportação em arquivo (Markdown ou JSON) leva só o texto.</li>
+          <li><strong>Se a assinatura vencer:</strong> o app para de gravar novos ditados; você continua podendo buscar,
+            ler e apagar o que já guardou; a exportação fica disponível por 30 dias e depois é desativada, e o app avisa
+            você. Renovar reativa tudo.</li>
+        </ul>
       </section>
 
       <!-- EN -->
@@ -242,8 +264,8 @@
             other information. The app checks each file's integrity (SHA-256) before using it and downloads over mobile
             data only if you allow it.
           </li>
-          <li>Audio is processed in memory, only while you dictate, and is not sent to any server nor saved to a file in the published version of the app.</li>
-          <li>The dictated text is inserted into the text field you chose. The app does not send it to third parties.</li>
+          <li>Audio is processed in memory, only while you dictate, and is never sent to any server. On the free plan it is not saved; on the Premium plan it is kept, only on your device, if you turn on “Save audio too” (see section 13).</li>
+          <li>The dictated text is inserted into the text field you chose. The app does not send it to third parties. On the Premium plan it is also kept in the history, only on your device (section 13).</li>
           <li>The microphone is opened only during a dictation you started and can be turned off at any time (the “Stop capture” button in the app).</li>
         </ul>
 
@@ -280,6 +302,7 @@
           <li><strong>Foreground service (microphone)</strong> — keeps a visible notification while the microphone is open.</li>
           <li><strong>Notifications</strong> — to show that notification.</li>
           <li><strong>Internet and network state</strong> — only to download the speech models and to tell whether you are on Wi-Fi or mobile data.</li>
+          <li><strong>In-app purchases (Google Play Billing)</strong> — for the Premium plan; payment is made and handled by Google Play.</li>
           <li><strong>Accessibility</strong> — as described above; it only works if you turn it on in Android settings.</li>
         </ul>
         <p>
@@ -289,14 +312,14 @@
 
         <h2>6. Storage and security</h2>
         <p>
-          Settings (stop phrase, send words, personal dictionary, and icon preferences) are kept only on the device
+          Settings (stop phrase, send words, personal dictionary, and icon preferences, and, on the Premium plan, the dictation history) are kept only on the device
           and are not included in cloud backups. Uninstalling the app deletes this data.
           Speech models are kept in an app folder on the device, where they were downloaded.
         </p>
 
         <h2>7. Data sharing</h2>
         <p>
-          The developer does not collect, sell, or share personal data.
+          The developer does not collect, sell, or share personal data. Subscription payment is handled by Google Play under its own policy.
         </p>
 
         <h2>8. Children</h2>
@@ -305,7 +328,7 @@
         <h2>9. Your rights</h2>
         <p>
           Because the app does not collect personal data, the developer holds no data about you to access, correct, or
-          delete (GDPR/LGPD). To erase what the app stores on your device, clear the app's data or uninstall it.
+          delete (GDPR/LGPD). To erase what the app stores on your device, use “Delete all” in the history, clear the app's data, or uninstall it.
         </p>
 
         <h2>10. Changes to this policy</h2>
@@ -327,6 +350,27 @@
           OpenAI, Hugging Face, or the whisper.cpp authors. The full license notices are in the app, under “About the
           app” &gt; “Open-source licenses”.
         </p>
+      
+        <h2>13. Premium plan and history</h2>
+        <p>
+          Scriba has a <strong>free plan</strong>, which works as described above and <strong>does not keep what you
+          dictate</strong>, and a <strong>Premium plan</strong> (annual subscription) with the dictation history.
+        </p>
+        <ul>
+          <li><strong>Subscription:</strong> it is billed, renewed, and cancelled by Google Play. The developer does not
+            receive your payment details; the app only asks Google Play whether an active subscription exists. You manage or
+            cancel it on the Google Play subscriptions page.</li>
+          <li><strong>History (Premium only):</strong> it keeps the text of each dictation (what was written, what the app
+            heard, the date, the target app, and the outcome) and, if you turn on “Save audio too”, the audio of your speech.
+            Everything stays <strong>only on your device</strong>: it is not sent to any server and is not included in
+            backups; uninstalling the app deletes the history. The text history is on by default for subscribers and you can
+            turn it off; audio is off by default.</li>
+          <li><strong>Your control:</strong> you can search, read, copy, send to another app (for example the NexusMD),
+            delete one dictation, or delete everything at any time. Exporting to a file (Markdown or JSON) includes text only.</li>
+          <li><strong>If the subscription lapses:</strong> the app stops recording new dictations; you can still search,
+            read, and delete what you already saved; export stays available for 30 days and is then turned off, and the app
+            tells you. Renewing turns everything back on.</li>
+        </ul>
       </section>
 
       <footer>
